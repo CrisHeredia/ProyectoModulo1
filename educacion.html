@@ -7,6 +7,9 @@
   <body>
     <header>
         <img src="images/logo.svg"/>
+        <svg  width="1100" height="10">
+          <line x1="0" y1="0" x2="1100" y2="0" stroke="black" stroke-width="1"/>
+        </svg>
         <h1>Resumen Curricular</h1>
         <h2>Nombre: Cristina Heredia Neira</h2>
         <h3>Lugar y Fecha de Nacimiento: Machala, 31 de Agosto de 1972</h3>
@@ -14,8 +17,69 @@
     <a href="index.html">Inicio |</a>
     <a href="experiencia.html">Experiencia</a>
     <h2>Educación</h2>
-  <footer>
-    <p>Email: crisheredian@hotmail.com<br/>Telf: 0998034578<br/>Dirección: José Tobar E17-179</p>
-  </footer>
+    <table border="2">
+      <thead>
+        <tr>
+          <td><strong>Año</strong></td>
+          <td><strong>Institución</strong></td>
+          <td><strong>Lugar</strong></td>
+          <td><strong>Culminó?</strong></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2002</td>
+          <td>Escuela Politécnica Javeriana</td>
+          <td>Quito - Ecuador</td>
+          <td>Si</td>
+        </tr>
+        <tr>
+          <td>1994</td>
+          <td>Universidad Técnica Israel</td>
+          <td>Quito - Ecuador</td>
+          <td>Si</td>
+        </tr>
+        <tr>
+          <td>1990</td>
+          <td>Colegio Particular Juan XXIII</td>
+          <td>Pasaje - Ecuador</td>
+          <td>Si</td>
+        </tr>
+      </tbody>
+    </table><br/>
+    <form autocomplete="on" name="Agregar Estudios" style="width:500px;">
+      <fieldset>
+          <legend><strong>Agregar estudios</strong></legend>
+          <label for="Año"><strong>Año: </strong></label>
+          <select>
+            <option>2010</option>
+            <option>2009</option>
+            <option>2008</option>
+            <option>2007</option>
+            <option>2006</option>
+            <option>2005</option>
+            <option>2004</option>
+            <option>2003</option>
+            <option>2002</option>
+            <option>2001</option>
+            <option>2000</option>
+            <option>1999</option>
+            <option>1998</option>
+            <option>1997</option>
+            <option>1996</option>
+          </select><br/><br/>
+          <label for="Institucion"><strong>Institucion: </strong></label>
+          <input type="text" maxlenght="60" style="width:350px;"><br/><br/>
+          <label for="Lugar"><strong>Lugar: </strong></label>
+          <textarea name="Lugar" rows="2" cols="50"></textarea>
+      </fieldset>
+    </form><br/>
+    <input type="submit" value="Enviar"><br/><br/>
+    <footer>
+      <svg  width="1100" height="10">
+        <line x1="0" y1="0" x2="1100" y2="0" stroke="black" stroke-width="1"/>
+      </svg>
+      <p>Email: crisheredian@hotmail.com<br/>Telf: 0998034578<br/>Dirección: José Tobar E17-179</p>
+    </footer>
   </body>
 </html>
